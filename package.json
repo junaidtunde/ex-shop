@@ -1,0 +1,37 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bin/dev",
+    "clean": "rm -r dist && mkdir dist",
+    "build": "npm run clean && babel server -s -d dist",
+    "start_a": "cd angular-src && ng serve --watch",
+    "build_": "cd angular-src && ng build --prod --configuration=production --aot && cd .."
+  },
+  "author": "Junaid Babatunde",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "file-saver": "^2.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.15",
+    "multer": "^1.4.1",
+    "nodemailer": "^4.7.0",
+    "nodemon": "^1.18.7",
+    "socket.io": "^2.2.0"
+  }
+}
